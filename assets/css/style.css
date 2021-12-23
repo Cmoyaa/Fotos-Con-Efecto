@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#panel1 {
+    background-image: url("https://pixabay.com/get/g95999cf221d8e82184b6a54ccd347004e08becdc01fa4480719c7afb8fd80d6025256759b22eb8dceca8c664c28fcc40b8813ef6e7f067178e49eb50b8a83a11119a56c2be60008320cd95483cd3282a_1920.jpg");
+}
+
+#panel2 {
+    background-image: url("https://pixabay.com/get/gc29e18d98c7690da33db879dc85d4bd552bd5fdb4dc3c3d036bf932f73f046c49026ad42bd312cb0864843f78f1d6032ee04984da0b20fc438986364a21b4e82dd3012f358350f1bf333f791335f1c33_1920.jpg");
+}
+
+#panel3 {
+    background-image: url("https://pixabay.com/get/g4a3fac5a8fb06535087538ae0f8ea9e254f7be14c64cfdfe37913a15c22896b07abbbdf9cdb6861163d7e102b57b44e328a036884dcda3c62ab6b8448865c89e1bd25bd60ee4580402f00515d418bbb4_1920.jpg");
+}
+
+#panel4 {
+    background-image: url("https://pixabay.com/get/gd18793b44d71af1c9e73aefcea2b9d756b26725bc2770b1d08f8b2df611bfb09ac7702ce5256ee7675140e7e76731835204ccd460f2a056bb23bfd248efa750609e0dc2f67f638284b3c0ecf102c5a45_1920.jpg");
+}
+
+#panel5 {
+    background-image: url("https://pixabay.com/get/g95999cf221d8e82184b6a54ccd347004e08becdc01fa4480719c7afb8fd80d6025256759b22eb8dceca8c664c28fcc40b8813ef6e7f067178e49eb50b8a83a11119a56c2be60008320cd95483cd3282a_1920.jpg");
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5 ease-in;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.panel h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.panel.activo {
+    flex: 5;
+}
+
+.panel.activo h3{
+    opacity: 1;
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+        display: none;
+    }
+}
