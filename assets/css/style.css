@@ -28,7 +28,7 @@ body {
 }
 
 #panel5 {
-    background-image: url("https://pixabay.com/get/g95999cf221d8e82184b6a54ccd347004e08becdc01fa4480719c7afb8fd80d6025256759b22eb8dceca8c664c28fcc40b8813ef6e7f067178e49eb50b8a83a11119a56c2be60008320cd95483cd3282a_1920.jpg");
+    background-image: url("https://pixabay.com/get/g7906c2cd3c80cfa4d97771bb5ccd400c545e2a49c27737085601722c7f43d79bc31e288cceb710018e46b3561d844da0f0e2ce657ea18240e7a70158f87c5c62de9a29cbc49ba826bf3b72106500d5f9_1920.jpg");
 }
 
 .container {
@@ -70,7 +70,7 @@ body {
         width: 100vw;
     }
 
-    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+    .panel:nth-of-type(6),.panel:nth-of-type(6) {
         display: none;
     }
 }
